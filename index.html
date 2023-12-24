@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width,initial-scale=1.0">
+        <title>LAB</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrap.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    </head>
+    <body>
+        <section class="header">
+            <nav>
+                <a href="index.html"><img src="PLAB.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href=""><h2>HOME</h2></a></li>
+                        <li><a href=""><h2>GALLERY</h2></a></li>
+                        <li><a href=""><h2>ABOUT</h2></a></li>
+                        <li><a href=""><h2>CONTACT US</h2></a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+           <div class="text-box">
+            <h1>PADMA CLINICAL LAB ECG & XRAY</h1>
+            <P>properites of blood test</P>
+            <a href="" class="hero-btn">Visit To Know More</a>
+
+           </div> 
+        </section>
+        <section>
+             <div class="image">
+                <img src="rameshanandhan.png"></a>
+            <h1>CA.RAMESH DMLT.,HES.</h1>
+            <P>PARAMEDICIAL LAB EDUCATIONAL AND WELFARE ASSOCIATION
+                VICE PRESIDENT THIRUVALLUR DISTRICT.<br>
+                GOLDEN MEMBER UNIAYAA HERBO CARE.</P>
+            </div> 
+        </section>
+        <section>
+            <div class="ABOUT">
+                <h1>Lab Tech</h1>
+                <p>In thelab during test one of the person interior body blood test give the results. </p>
+            </div>
+        </section>
+        <section>
+            <div class="CONTACT US">
+                <form action="https://sheetdb.io/api/v1/qs9jqb3l5cnp9" method="POST" id="sheetdb-form">
+                    <div class="container">
+                      <h1>Sign Up</h1>
+                      <p>Please fill in this form to create an account.</p>
+                      <hr>
+                  
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="data=[email]" required>
+                  
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="data=[psw]" required>
+                  
+                      <label for="psw-repeat"><b>Repeat Password</b></label>
+                      <input type="password" placeholder="Repeat Password" name="data=[psw-repeat]" required>
+                  
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                      </label>
+                  
+                      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                  
+                      <div class="clearfix">
+                        <button type="button" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                      </div>
+                    </div>
+                  </form>
+                  <script>
+                    var form= document.getElementById('sheetdb-form');
+                    form.addEventListener("submit",e =>{
+                        e.preventDefault();
+                        fetch(form.action,{
+                            method:"POST",
+                            body:new FormData(document.getElementById('sheetdb-form')),
+                        }).then(
+                            Response=>reponse.json()
+                        ).then(html) =>{
+                            window.open('d.html','blamk');
+                        }.then(message=>alert=("message send succesfully"));
+                    })
+                  </script>
+           
+            </div>
+        </section>
+          <script>
+            var navLinks=document.getElementById("navLinks");
+            function showMenu(){
+                navLinks.style.right="0";
+            }
+            function hideMenu(){
+                navLinks.style.right="-200px";
+            }
+          </script>
+          <a href="#">yotube</a>
+    </body>
+</html>

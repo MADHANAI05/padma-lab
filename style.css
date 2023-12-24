@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    min-height: 100vh;
+    width:100%;
+    background-color: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    background :url('labwork.png');
+    background-image:transparent;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+nav img{
+    width:150px;
+}
+nav{
+    display:flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items:center;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #ee1811;
+    text-decoration:none;
+    font-size: 13px;
+}
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height:2px;
+    background:#d9e228;
+    display: block;
+    margin:auto;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+.text-box{
+    width: 90%;
+    color:rgb(244, 10, 158);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin:10px o 40px;
+    font: size 22px;
+    color:aliceblue; 
+}
+.text-box a{
+    margin: 0%;
+    font-size: 40px;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size:13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border:1px soild #f44336;
+    background: #f44336;
+    transition: 1s;
+}
+.nav .fa{
+        display:none;
+}
+@media(max-width:700px)
+{
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height:100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+        transition:1s;
+    }
+    nav.fa{
+        display:block;
+        color:#fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor:pointer;
+    }
+    .nav-links ul{
+        padding:30px;
+    }
+    
+}
+ .image img{
+   width:30%;
+   display:block;
+   margin:0px auto ;
+}
+.image{
+    width: 80%;
+     margin: auto;
+     text-align: center;
+     padding-top:100px;
+}
+ h1{
+    font-size: 36px;
+    font-weight: 600;
+ }
+p{
+    color: #3cf70d77;
+    font-size:14px;
+    font-weight: 300;
+    padding:10px; 
+ }
+.ABOUT{
+     width: 80%;
+     margin: auto;
+     text-align: center;
+     padding-top:100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #7777;
+    font-size:14px;
+    font-weight: 300;
+    padding:10px;
+}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
